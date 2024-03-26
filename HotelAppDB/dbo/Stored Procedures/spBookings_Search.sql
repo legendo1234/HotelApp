@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[spBookings_Search]
 	@lastName nvarchar(50),
-	@starDate date
+	@startDate date
 AS
 begin
 	set nocount on;
@@ -14,6 +14,6 @@ begin
 	inner join dbo.Guests g on b.GuestId = g.Id
 	inner join dbo.Rooms r on b.RoomId = r.Id
 	inner join dbo.RoomTypes rt on r.RoomTypeId = rt.Id
-	where b.StartDate = @starDate and g.LastName = @lastName;
+	where b.StartDate = @startDate and g.LastName = @lastName;
 
 end
