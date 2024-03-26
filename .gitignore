@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /HotelApp.Web/appsettings.json
 /HotelApp.Web/Properties/launchSettings.json
+/HotelApp.Desktop/appsettings.json
