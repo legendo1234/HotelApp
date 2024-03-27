@@ -29,7 +29,7 @@ namespace HotelAppLibrary.Data
         public void BookGuest(string firstName,
                          string lastName,
                          DateTime startDate,
-                         DateTime endDate,
+                         DateTime endDate, 
                          int roomTypeId)
         {
             GuestModel guest = _db.LoadData<GuestModel, dynamic>("dbo.spGuests_Insert",
